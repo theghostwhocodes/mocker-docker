@@ -2,8 +2,8 @@ FROM golang:1.10.3-alpine3.7 as builder
 
 LABEL maintainer="paolo.ferretti@gmail.com"
 
-ENV MOCKER_VERSION 0.3.0
-ENV MOCKER_DOWNLOAD_URL https://github.com/theghostwhocodes/mocker-go/archive/v0.3.0.zip
+ENV MOCKER_VERSION 0.3.1
+ENV MOCKER_DOWNLOAD_URL https://github.com/theghostwhocodes/mocker-go/archive/v0.3.1.zip
 
 RUN mkdir -p /go/src/github.com/theghostwhocodes; \
     wget -P /go/src/github.com/theghostwhocodes/ $MOCKER_DOWNLOAD_URL; \
